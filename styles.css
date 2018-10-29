@@ -1,0 +1,59 @@
+table
+{
+	padding: 10px;
+  display:inline-block;
+}
+
+table:after
+{
+  counter-increment: board-count -1;
+  content: "("counter(board-count,upper-roman)")";
+  float:right;
+}
+
+td
+{
+  width:28px;
+  height:28px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.black
+{
+  background-color: rgba(127,127,127,0.6);
+}
+
+.white
+{
+  background-color: white;
+}
+
+
+.start {
+background-color: rgba(0,204,0,0.6);
+}
+
+.highlighted {
+background-color: rgba(0,255,0,0.6);
+}
+
+.drag
+{
+background-color: rgba(0,204,255,0.6);
+}
+
+
+.selected {
+background-color: green;
+cursor: grab;
+}
+
+.selected img
+{
+  display:block;
+}
+
+.dragged {
+  cursor: grabbing;
+}
